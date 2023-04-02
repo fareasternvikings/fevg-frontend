@@ -27,6 +27,9 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.SSH_PASSPHRASE }}
           script: |
-            echo "hello"
+            docker stop fevg-frontend
+            docker rmi fareasternvikings/fevg-frontend:0.0.1
             cd /root/fevg-frontend
             git pull
+            docker pull fareasternvikings/fevg-frontend:0.0.1
+            docker run -p 80:80 --rm -d --name fevg-frontend fareasternvikings/fevg-frontend:0.0.1
