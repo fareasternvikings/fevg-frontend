@@ -28,5 +28,5 @@ jobs:
           passphrase: ${{ secrets.SSH_PASSPHRASE }}
           script: |
             echo "hello"
-            cd /fevg-frontend
+            cd /root/fevg-frontend
             git pull
