@@ -1,0 +1,6 @@
+<div *ngFor="let product of products$ | async" >
+  <div>
+    <b> {{product.attributes.name}}</b>
+    <small>{{product.attributes.price}}</small>
+  </div>
+</div>
