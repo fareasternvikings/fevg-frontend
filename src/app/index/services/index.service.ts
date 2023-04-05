@@ -19,7 +19,7 @@ export class IndexService {
     console.log('buy')
 
     const uuid = uuidv4();
-    const url = '/api/v3/payments';
+    const url = '/api';
 
     const headers = new HttpHeaders({
       'Content-Type': 'application/json',
