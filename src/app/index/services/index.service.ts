@@ -19,12 +19,13 @@ export class IndexService {
     console.log('buy')
 
     const uuid = uuidv4();
-    const url = '/api';
+    const url = 'https://api.yookassa.ru/v3/payments';
 
     const headers = new HttpHeaders({
       'Content-Type': 'application/json',
       'Idempotence-Key': uuid,
-      'Authorization': 'Basic ' + btoa(`${environment.shopId}:${environment.shopKey}`)
+      'Authorization': 'Basic ' + btoa(`${environment.shopId}:${environment.shopKey}`),
+      'Access-Control-Allow-Origin': '*'
     });
     const body = {
       amount: {
