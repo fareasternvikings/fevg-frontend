@@ -1,10 +1,7 @@
 {
-  "/api/": {
-    "target": "https://api.busbox.guru",
+  "/api/*": {
+    "target": "https://api.yookassa.ru",
     "secure": true,
-    "pathRewrite": {
-      "^/api": "https://api.busbox.guru/v1/"
-    },
     "changeOrigin": true,
     "logLevel": "debug"
   }
