@@ -4,4 +4,6 @@ export const environment = {
   apiKey: '',
   apiMapKey: '',
   limit: 10,
+  shopId: '210032',
+  shopKey: 'test_Olq_eyCh2y6zQFZtPKVTp2LYKUkb_VoIVSFgs-SIpE0'
 }

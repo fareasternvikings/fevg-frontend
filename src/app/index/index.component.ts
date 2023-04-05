@@ -17,4 +17,7 @@ export class IndexComponent implements OnInit {
     this.products$ = this.indexService.getProducts()
   }
 
+  buy() {
+    this.indexService.buy()
+  }
 }
